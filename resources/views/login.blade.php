@@ -16,29 +16,17 @@
 
                 <div class="bg-white p-4">
 
-                    <x-auth-session-status class="mb-4" :status="session('status')" />
-
                     <form method="POST" action="{{ route('login') }}" novalidate>
                         @csrf
 
                         <div class="mb-3">
                             <label id="login" for="login" class="form-label">{{ trans("auth.personal_number") }}</label>
-                            <input @class(['form-control', 'is-invalid' => $errors->get('login')]) type="text" name="login" :value="old('login')" required autofocus autocomplete="username" placeholder="12345" />
-                            @error('login')
-                                <span class="invalid-feedback" role="alert">
-                                {{ $message }}
-                                </span>
-                            @enderror
+                            <input @class(['form-control', 'is-invalid' => false]) type="text" name="login" :value="old('login')" required autofocus autocomplete="username" placeholder="12345" />
                         </div>
 
                         <div class="mb-3">
                             <label for="password" class="form-label">{{ trans("auth.password") }}</label>
-                            <input id="password" @class(['form-control', 'is-invalid' => $errors->get('password')]) type="password" name="password" required autocomplete="current-password" />
-                            @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    {{ $message }}
-                                </span>
-                            @enderror
+                            <input id="password" @class(['form-control', 'is-invalid' => false]) type="password" name="password" required autocomplete="current-password" />
                         </div>
 
                         <!-- Remember Me -->

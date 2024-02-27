@@ -11,20 +11,11 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-
-        /*
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'auth');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'auth');
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'auth');
 
         if ($this->app->runningInConsole()) {
-
-            $this->publishes([
-                __DIR__.'/../config/ldap.php' => config_path('ldap.php'),
-                __DIR__.'/../config/hrms.php' => config_path('hrms.php'),
-            ], 'config');
 
             // Publishing the translation files.
             $this->publishes([
@@ -37,12 +28,13 @@ class AuthServiceProvider extends ServiceProvider
             ], 'views');
 
             // Publishing the migrations.
+            /*
             $this->publishes([
                 __DIR__.'/../database/migrations/' => database_path('migrations')
             ], 'migrations');
+            */
 
         }
-        */
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dpb\Auth\Http\Requests\Auth;
+namespace Dpb\Auth\Http\Requests;
 
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Foundation\Http\FormRequest;

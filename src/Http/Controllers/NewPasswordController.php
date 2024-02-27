@@ -1,6 +1,6 @@
 <?php
 
-namespace Dpb\Auth\Http\Controllers\Auth;
+namespace Dpb\Auth\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Auth\Events\PasswordReset;
