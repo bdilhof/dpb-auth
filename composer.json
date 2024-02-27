@@ -3,12 +3,6 @@
   "description": "Authentication for Laravel 10.0",
   "homepage": "https://github.com/bdilhof/dpb-auth",
   "license": "MIT",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:bdilhof/dpb-ui.git"
-    }
-  ],
   "type": "library",
   "authors": [
     {
@@ -19,8 +13,7 @@
   ],
   "require": {
     "php": "^8",
-    "illuminate/support": "^10.0",
-    "dpb/ui": "dev-main"
+    "illuminate/support": "^10.0"
   },
   "require-dev": {
     "orchestra/testbench": "^4.0",
